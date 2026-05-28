@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参赛路径规划 | 赛题档案馆</title>
+  <meta name="description" content="赛题档案馆是面向设计专业大学生的竞赛资料、赛题解析、优秀案例和参赛规划网站。">
+  <meta name="theme-color" content="#5b6f75">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="planner">
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main-content">跳到主内容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">DBA</span><span>赛题档案馆</span></a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="search.html">全站搜索</a>
+      <a href="competitions.html">比赛库</a>
+      <a href="similar.html">相似赛题</a>
+      <a href="themes.html">历年主题</a>
+      <a href="works.html">优秀作品索引</a>
+      <a href="cases.html">往年优秀案例</a>
+      <a href="analysis.html">赛题解析</a>
+      <a href="planner.html">路径规划</a>
+      <a href="dashboard.html">我的看板</a>
+      <a href="submit-helper.html">参赛助手</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+  </header>
+  <noscript><div class="noscript-warning">本站需要启用 JavaScript 才能读取本地资料库、筛选比赛和使用参赛助手。</div></noscript>
+
+  <main id="main-content">
+    <section class="page-hero section reveal">
+      <p class="eyebrow">Competition Route</p>
+      <h1>参赛路径规划</h1>
+      <p>根据专业、年级、作品类型和主题关键词，生成更适合学生的比赛推荐、相似赛题提醒与材料准备路线。</p>
+    </section>
+
+    <section class="section helper-layout">
+      <form id="planner-form" class="helper-form reveal">
+        <article class="info-card">
+          <h2>你的作品方向</h2>
+          <div class="form-grid">
+            <label>专业方向<input name="major" type="text" placeholder="视觉传达 / 数字媒体 / 包装设计"></label>
+            <label>年级<select name="grade">
+              <option value="">请选择</option>
+              <option>大一</option><option>大二</option><option>大三</option><option>大四</option><option>研究生</option>
+            </select></label>
+            <label>作品类型<input name="workType" type="text" placeholder="海报 / 品牌 / 包装 / 文创 / 交互"></label>
+            <label>经验程度<select name="experience">
+              <option value="beginner">新手，想先完整走一遍流程</option>
+              <option value="medium">有课程作品，想冲更完整表达</option>
+              <option value="advanced">有成熟项目，想投更高要求比赛</option>
+            </select></label>
+          </div>
+          <label class="full-field">主题关键词<textarea name="keywords" rows="4" placeholder="例如：城市更新、青年表达、非遗、乡村振兴、可持续、AIGC"></textarea></label>
+        </article>
+      </form>
+
+      <aside class="helper-result reveal">
+        <article class="notice-card">
+          <h2>使用说明</h2>
+          <p>推荐结果只作为学习研究和参赛规划参考，不代表官方报名建议。比赛时间、规则、作品要求和提交成功状态，请始终以比赛官网或主办方通知为准。</p>
+        </article>
+        <article id="planner-output" class="info-card"></article>
+      </aside>
+    </section>
+
+    <section class="section dashboard-wrap">
+      <article class="notice-card reveal">
+        <h2>本地个人空间</h2>
+        <p>这里展示你的收藏、参赛计划和浏览偏好。所有内容只保存在当前浏览器，不会上传服务器，也不需要登录。</p>
+      </article>
+
+      <div id="local-profile-card"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Competition Favorites</p>
+          <h2>收藏的比赛</h2>
+        </div>
+        <a class="button ghost" href="competitions.html">继续浏览比赛 <span>→</span></a>
+      </div>
+      <div id="local-favorite-competitions" class="dashboard-grid" aria-live="polite"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Work Favorites</p>
+          <h2>收藏的作品</h2>
+        </div>
+        <a class="button ghost" href="works.html">继续浏览作品 <span>→</span></a>
+      </div>
+      <div id="local-favorite-works" class="dashboard-grid" aria-live="polite"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Local Plan</p>
+          <h2>参赛计划</h2>
+        </div>
+      </div>
+      <div id="local-plans" class="dashboard-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>路径规划不会上传你的输入信息。请结合老师建议、课程安排和比赛官方规则自行判断。</p>
+  </footer>
+  <button class="back-top" type="button" aria-label="返回顶部">↑</button>
+  <script src="data/archive-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

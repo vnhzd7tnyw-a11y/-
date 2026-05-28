@@ -1,0 +1,172 @@
+[
+  {
+    "id": "theme-005",
+    "competitionId": "competition-101",
+    "competitionName": "全国大学生广告艺术大赛（大广赛）",
+    "year": "历年",
+    "theme": "品牌命题与青年创意表达",
+    "direction": "广告创意 / 品牌传播 / 系列物料",
+    "keywords": [
+      "品牌命题",
+      "广告创意",
+      "消费者洞察"
+    ],
+    "analysis": "大广赛适合训练从品牌命题到创意策略、文案、主视觉和传播触点的完整链路。学生应先读命题资料，再做受众洞察和媒介场景拆解。",
+    "sourceName": "全国大学生广告艺术大赛官网",
+    "sourceUrl": "https://www.sun-ada.net/",
+    "copyrightNote": "命题资料和获奖作品版权归主办方、命题企业、作者或相关权利人所有，本站仅做学习研究与索引。"
+  },
+  {
+    "id": "theme-006",
+    "competitionId": "competition-102",
+    "competitionName": "未来设计师·全国高校数字艺术设计大赛（NCDA）",
+    "year": "历年",
+    "theme": "数字艺术与跨媒介设计表达",
+    "direction": "数字媒体 / 交互设计 / 动画与视觉传达",
+    "keywords": [
+      "数字艺术",
+      "跨媒体",
+      "AIGC"
+    ],
+    "analysis": "NCDA类赛事适合把课程项目整理为完整数字作品，重点是过程、交互逻辑、视觉完成度和项目说明。",
+    "sourceName": "未来设计师NCDA官网",
+    "sourceUrl": "https://www.ncda.org.cn/",
+    "copyrightNote": "赛事资料与作品版权归主办方、作者或相关权利人所有，本站不搬运作品图。"
+  },
+  {
+    "id": "theme-007",
+    "competitionId": "competition-103",
+    "competitionName": "中国好创意暨全国数字艺术设计大赛",
+    "year": "历年",
+    "theme": "课程成果转化与数字艺术创新",
+    "direction": "数字艺术 / 插画绘本 / 文创设计",
+    "keywords": [
+      "课程转化",
+      "数字艺术",
+      "传统文化"
+    ],
+    "analysis": "中国好创意适合观察课程作业如何进一步转化为竞赛作品，尤其要补齐作品说明、过程图和应用场景。",
+    "sourceName": "中国好创意大赛官网",
+    "sourceUrl": "https://www.cdec.org.cn/",
+    "copyrightNote": "获奖作品版权归原作者和相关权利人所有，本站仅做索引与原创分析。"
+  },
+  {
+    "id": "theme-008",
+    "competitionId": "competition-104",
+    "competitionName": "米兰设计周-中国高校设计学科师生优秀作品展",
+    "year": "历年",
+    "theme": "高校设计作品的综合展示",
+    "direction": "品牌 / 产品 / 环境 / 视觉综合表达",
+    "keywords": [
+      "高校作品展",
+      "综合设计",
+      "作品集表达"
+    ],
+    "analysis": "该类展赛适合训练作品集式叙事，重点是研究背景、设计系统、应用场景和展示版式的一致性。",
+    "sourceName": "米兰设计周高校设计作品展官网",
+    "sourceUrl": "https://www.milan-aap.org.cn/index.html",
+    "copyrightNote": "作品版权归原作者或相关权利人所有。本站不复制高清作品图。"
+  },
+  {
+    "id": "theme-009",
+    "competitionId": "competition-139",
+    "competitionName": "江苏省大学生人工智能艺术创作大赛",
+    "year": "2025",
+    "theme": "人工智能与艺术设计融合",
+    "direction": "AI艺术 / 数字媒体 / 视觉生成",
+    "keywords": [
+      "AI艺术",
+      "生成式设计",
+      "过程记录"
+    ],
+    "analysis": "AI艺术主题的关键不是只展示结果图，而是说明提示词、生成过程、人工编辑、原创性和工具使用边界。",
+    "sourceName": "江苏省教育厅相关报道",
+    "sourceUrl": "https://jyt.jiangsu.gov.cn/art/2025/11/24/art_57807_11679957.html",
+    "copyrightNote": "AI生成内容及参考素材需按赛事规则披露，本站仅做学习整理。"
+  },
+  {
+    "id": "theme-010",
+    "competitionId": "competition-141",
+    "competitionName": "“红岩印·青春”重庆红色文化创意产品设计大赛",
+    "year": "2025",
+    "theme": "红色文化的青春化文创表达",
+    "direction": "文创产品 / 红色文化 / 城市记忆",
+    "keywords": [
+      "红岩文化",
+      "文创转化",
+      "城市记忆"
+    ],
+    "analysis": "红色文化类赛题需要先核验历史资料，再进行视觉转译和产品场景设计，避免符号堆砌。",
+    "sourceName": "重庆市人民政府网相关报道",
+    "sourceUrl": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/zxdt/202506/t20250618_14724149.html",
+    "copyrightNote": "历史资料、图片和文创作品版权需合法使用，本站仅做索引。"
+  },
+  {
+    "id": "theme-011",
+    "competitionId": "competition-143",
+    "competitionName": "杭州西湖文化创新应用设计大赛",
+    "year": "2025",
+    "theme": "西湖文化资源的创新应用",
+    "direction": "文旅品牌 / 文创产品 / 文化IP",
+    "keywords": [
+      "西湖文化",
+      "文旅品牌",
+      "文化IP"
+    ],
+    "analysis": "地方文化IP主题适合从文化资源、目标用户、应用场景和产品转化四个层面展开。",
+    "sourceName": "公开赛事通知与高校获奖报道",
+    "sourceUrl": "https://www.xjtlu.edu.cn/zh/news/2026/01/%E7%94%A8%E5%85%A8%E5%81%A5%E5%BA%B7%E7%A0%B4%E9%A2%98%E6%96%87%E5%88%9Bibss%E5%AD%A6%E7%94%9F%E8%8E%B7%E5%BE%97%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%96%87%E5%8C%96",
+    "copyrightNote": "地方文化资料、图片和作品版权归相关权利人所有，本站仅做学习分析。"
+  },
+  {
+    "id": "theme-012",
+    "competitionId": "competition-144",
+    "competitionName": "UAD杯全国大学生城市设计大赛",
+    "year": "2026",
+    "theme": "智慧城市与城市更新",
+    "direction": "城市设计 / 空间策略 / 公共议题",
+    "keywords": [
+      "智慧城市",
+      "城市更新",
+      "公共空间"
+    ],
+    "analysis": "城市设计主题要从场地问题、使用人群和公共价值出发，展板应清楚呈现分析、策略和空间结果。",
+    "sourceName": "UAD全国大学生城市设计大赛官网",
+    "sourceUrl": "https://www.ued.univs.org/",
+    "copyrightNote": "赛事资料、基地素材和作品版权归相关权利人所有，本站仅做索引。"
+  },
+  {
+    "id": "theme-013",
+    "competitionId": "competition-145",
+    "competitionName": "“中装杯”全国大学生环境设计大赛",
+    "year": "2026",
+    "theme": "人居空间与环境设计创新",
+    "direction": "室内设计 / 空间设计 / AIGC空间表达",
+    "keywords": [
+      "环境设计",
+      "室内空间",
+      "AIGC"
+    ],
+    "analysis": "空间类赛题需要把效果图转化为完整方案，补充用户、动线、材料、节点和场景说明。",
+    "sourceName": "哈尔滨工业大学建筑与设计学院通知",
+    "sourceUrl": "https://arch.hit.edu.cn/2026/0408/c11953a389510/pagem.htm",
+    "copyrightNote": "空间素材、模型、图片和视频资源需合法使用，作品应为原创。"
+  },
+  {
+    "id": "theme-014",
+    "competitionId": "competition-147",
+    "competitionName": "国际大学生数字艺术设计大赛",
+    "year": "2026",
+    "theme": "国际语境下的数字艺术表达",
+    "direction": "数字艺术 / 插画动画 / 交互视觉",
+    "keywords": [
+      "数字艺术",
+      "国际竞赛",
+      "跨文化表达"
+    ],
+    "analysis": "国际数字艺术类赛题要注意语言、格式、版权和跨文化理解，作品说明需要比普通课程作业更清晰。",
+    "sourceName": "国际大学生数字艺术设计大赛官网",
+    "sourceUrl": "https://www.apdiaa.com/home",
+    "copyrightNote": "数字素材、AI生成内容、字体、图片和模型资源需具备原创性或合法授权。"
+  }
+]

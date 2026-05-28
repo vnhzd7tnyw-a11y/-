@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的参赛看板 | 赛题档案馆</title>
+  <meta name="description" content="赛题档案馆是面向设计专业大学生的竞赛资料、赛题解析、优秀案例和参赛规划网站。">
+  <meta name="theme-color" content="#5b6f75">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main-content">跳到主内容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">DBA</span><span>赛题档案馆</span></a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="search.html">全站搜索</a>
+      <a href="competitions.html">比赛库</a>
+      <a href="similar.html">相似赛题</a>
+      <a href="themes.html">历年主题</a>
+      <a href="works.html">优秀作品索引</a>
+      <a href="cases.html">往年优秀案例</a>
+      <a href="analysis.html">赛题解析</a>
+      <a href="planner.html">路径规划</a>
+      <a href="dashboard.html">我的看板</a>
+      <a href="submit-helper.html">参赛助手</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+  </header>
+  <noscript><div class="noscript-warning">本站需要启用 JavaScript 才能读取本地资料库、筛选比赛和使用参赛助手。</div></noscript>
+
+  <main id="main-content">
+    <section class="page-hero section reveal">
+      <p class="eyebrow">Personal Board</p>
+      <h1>我的参赛看板</h1>
+      <p>集中管理本地收藏、参赛计划和备份文件。所有记录只保存在当前浏览器，不需要登录。</p>
+    </section>
+
+    <section class="section dashboard-wrap">
+      <article class="notice-card reveal">
+        <h2>本地记录说明</h2>
+        <p>看板读取的是同一套本地记忆：收藏比赛、收藏作品和参赛计划。本站可以帮助整理材料和入口，但报名、授权确认、作品上传和提交成功记录仍必须在比赛官方页面完成。</p>
+      </article>
+
+      <div id="local-profile-card"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Local Plan</p>
+          <h2>参赛计划</h2>
+        </div>
+        <div class="toolbar-actions">
+          <button class="button ghost" type="button" data-local-export>导出本地记忆</button>
+          <label class="button ghost file-button">导入本地记忆<input type="file" accept="application/json,.json" data-local-import></label>
+          <a class="button ghost" href="competitions.html">继续浏览比赛 <span>→</span></a>
+        </div>
+      </div>
+      <div id="local-plans" class="dashboard-grid" aria-live="polite"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Competition Favorites</p>
+          <h2>收藏的比赛</h2>
+        </div>
+      </div>
+      <div id="local-favorite-competitions" class="dashboard-grid" aria-live="polite"></div>
+
+      <div class="dashboard-toolbar reveal">
+        <div>
+          <p class="eyebrow">Work Favorites</p>
+          <h2>收藏的作品</h2>
+        </div>
+        <a class="button ghost" href="works.html">继续浏览作品 <span>→</span></a>
+      </div>
+      <div id="local-favorite-works" class="dashboard-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>最终报名状态以比赛官网提交成功页面、确认邮件或主办方通知为准。请学生自行保存提交凭证。</p>
+  </footer>
+  <button class="back-top" type="button" aria-label="返回顶部">↑</button>
+  <script src="data/archive-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
