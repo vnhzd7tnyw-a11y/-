@@ -1060,6 +1060,28 @@ html[data-theme="dark"] .button.ghost {
   display: block;
 }
 
+.analysis-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.analysis-stack section {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255,255,255,.52);
+}
+
+.analysis-stack h4 {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.analysis-stack p {
+  margin: 0;
+}
+
 .work-card {
   display: grid;
   grid-template-columns: 190px 1fr;

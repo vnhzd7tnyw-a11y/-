@@ -1855,7 +1855,7 @@ function themeItem(item) {
       <p>${safe(item.direction)}</p>
     </button>
     <div class="timeline-detail">
-      <p>${safe(item.analysis)}</p>
+      ${themeAnalysisDetail(item)}
       <p class="muted">资料来源：${safe(item.sourceName)}</p>
       ${sourceLink(item.sourceUrl, "查看官方来源")}
     </div>
@@ -1971,7 +1971,7 @@ function onChange(selector, callback) {
 function includesAny(item, query, keys) {
   if (!query) return true;
   const lower = query.toLowerCase();
-  return keys.some((key) => toArray(item[key]).join(" ").toLowerCase().includes(lower));
+  return keys.some((key) => flattenText(item[key]).toLowerCase().includes(lower));
 }
 
 function hasValue(value, target) {
@@ -2013,6 +2013,30 @@ function analysisBlock(title, body) {
   return `<article class="detail-block"><h2>${safe(title)}</h2><p>${safe(body || "待补充")}</p></article>`;
 }
 
+function themeAnalysisSummary(item) {
+  const analysis = item?.analysis;
+  if (analysis && typeof analysis === "object" && !Array.isArray(analysis)) {
+    return analysis.overview || analysis.coreQuestion || flattenText(analysis);
+  }
+  return analysis || "待补充";
+}
+
+function themeAnalysisDetail(item) {
+  const analysis = item?.analysis;
+  if (!(analysis && typeof analysis === "object" && !Array.isArray(analysis))) {
+    return `<p>${safe(analysis || "待补充")}</p>`;
+  }
+  const sections = [
+    ["解析概览", analysis.overview],
+    ["核心问题", analysis.coreQuestion],
+    ["拆题路径", analysis.breakdown],
+    ["输出建议", analysis.outputAdvice],
+    ["评审关注", analysis.judgingFocus],
+    ["常见误区", analysis.pitfalls]
+  ].filter(([, body]) => body);
+  return `<div class="analysis-stack">${sections.map(([title, body]) => `<section><h4>${safe(title)}</h4><p>${safe(body)}</p></section>`).join("")}</div>`;
+}
+
 function caseAnalysisSummary(item) {
   const analysis = item?.analysis;
   if (analysis && typeof analysis === "object" && !Array.isArray(analysis)) {
@@ -2024,12 +2048,17 @@ function caseAnalysisSummary(item) {
 function caseAnalysisBlocks(item) {
   const analysis = item?.analysis;
   if (analysis && typeof analysis === "object" && !Array.isArray(analysis)) {
-    return [
-      analysisBlock("学习分析", analysis.overview),
-      analysisBlock("观察重点", analysis.readingPoints),
-      analysisBlock("不要误读", analysis.avoid),
-      analysisBlock("参赛转化", analysis.apply)
-    ].join("");
+    const sections = [
+      ["学习分析", analysis.overview],
+      ["命题关系", analysis.briefRelation],
+      ["观察重点", analysis.readingPoints],
+      ["视觉系统", analysis.visualSystem],
+      ["展示方式", analysis.presentation],
+      ["不要误读", analysis.avoid],
+      ["参赛转化", analysis.apply],
+      ["提交前自查", analysis.checklist]
+    ].filter(([, body]) => body);
+    return sections.map(([title, body]) => analysisBlock(title, body)).join("");
   }
   return analysisBlock("学习分析", analysis);
 }
