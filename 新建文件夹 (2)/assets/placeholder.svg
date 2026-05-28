@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">抽象作品占位图</title>
+  <desc id="desc">低饱和网格、矩形和线条组成的占位图。</desc>
+  <rect width="800" height="600" fill="#efeee9"/>
+  <g stroke="#d4d0c6" stroke-width="1">
+    <path d="M80 0v600M160 0v600M240 0v600M320 0v600M400 0v600M480 0v600M560 0v600M640 0v600M720 0v600"/>
+    <path d="M0 75h800M0 150h800M0 225h800M0 300h800M0 375h800M0 450h800M0 525h800"/>
+  </g>
+  <rect x="138" y="112" width="260" height="180" fill="#ffffff" stroke="#c9c4ba"/>
+  <rect x="430" y="180" width="210" height="250" fill="#dfe7e6" stroke="#bfcac8"/>
+  <circle cx="280" cy="395" r="66" fill="#d8c9bf" opacity=".72"/>
+  <path d="M150 440h210M150 472h145M460 132h160M460 462h96" stroke="#5b6f75" stroke-width="8" stroke-linecap="round"/>
+  <text x="56" y="560" fill="#8a908e" font-family="Arial, sans-serif" font-size="24" letter-spacing="2">WORK INDEX PLACEHOLDER</text>
+</svg>

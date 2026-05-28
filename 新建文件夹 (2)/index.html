@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>赛题档案馆 | Design Brief Archive</title>
+  <meta name="description" content="赛题档案馆是面向设计专业大学生的竞赛资料、赛题解析、优秀案例和参赛规划网站。">
+  <meta name="theme-color" content="#5b6f75">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main-content">跳到主内容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="赛题档案馆首页">
+      <span class="brand-mark">DBA</span>
+      <span>赛题档案馆</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="search.html">全站搜索</a>
+      <a href="competitions.html">比赛库</a>
+      <a href="similar.html">相似赛题</a>
+      <a href="themes.html">历年主题</a>
+      <a href="works.html">优秀作品索引</a>
+      <a href="cases.html">往年优秀案例</a>
+      <a href="analysis.html">赛题解析</a>
+      <a href="planner.html">路径规划</a>
+      <a href="dashboard.html">我的看板</a>
+      <a href="submit-helper.html">参赛助手</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+  </header>
+  <noscript><div class="noscript-warning">本站需要启用 JavaScript 才能读取本地资料库、筛选比赛和使用参赛助手。</div></noscript>
+
+  <main id="main-content">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Archive 001 / Brief 2026</p>
+        <h1>赛题档案馆</h1>
+        <p class="hero-lead">为设计专业大学生整理竞赛信息、历年主题、优秀作品索引与参赛思路。</p>
+        <p class="hero-note">一个非商业、学习研究型的设计竞赛资料档案。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="competitions.html">查看比赛库 <span>→</span></a>
+        <a class="button ghost" href="search.html">全站搜索 <span>→</span></a>
+        <a class="button ghost" href="similar.html">查看相似赛题 <span>→</span></a>
+        <a class="button ghost" href="works.html">浏览作品索引 <span>→</span></a>
+        <a class="button ghost" href="cases.html">查看往年案例 <span>→</span></a>
+        <a class="button ghost" href="planner.html">规划参赛路线 <span>→</span></a>
+        <a class="button ghost" href="dashboard.html">打开我的看板 <span>→</span></a>
+        <a class="button ghost" href="submit-helper.html">整理参赛材料 <span>→</span></a>
+      </div>
+      </div>
+      <div class="archive-panel reveal" aria-label="档案概览">
+        <div class="panel-grid"></div>
+        <div class="archive-row"><span>档案形式</span><strong>学习资料库</strong></div>
+        <div class="archive-row"><span>整理重点</span><strong>设计竞赛赛题</strong></div>
+        <div class="archive-row"><span>使用方式</span><strong>研究 / 检索 / 规划</strong></div>
+        <div class="archive-tags">
+          <span>视觉传达</span><span>品牌设计</span><span>作品分析</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Archive Health</p>
+        <h2>资料库状态</h2>
+        <a href="similar.html">查看相似赛题 <span>→</span></a>
+      </div>
+      <div id="home-stats" class="stats-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Recent Competitions</p>
+        <h2>近期设计比赛</h2>
+        <a href="competitions.html">进入比赛库 <span>→</span></a>
+      </div>
+      <div id="home-competitions" class="card-grid"></div>
+    </section>
+
+    <section class="section muted-band">
+      <div class="section-heading">
+        <p class="eyebrow">Categories</p>
+        <h2>热门竞赛分类</h2>
+      </div>
+      <div id="category-cloud" class="category-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Regional Index</p>
+        <h2>区域赛事覆盖</h2>
+        <a href="competitions.html">按地区筛选 <span>→</span></a>
+      </div>
+      <div id="home-regions" class="region-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Theme Timeline</p>
+        <h2>历年主题速览</h2>
+        <a href="themes.html">查看全部主题 <span>→</span></a>
+      </div>
+      <div id="home-themes" class="timeline compact"></div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <div class="section-heading inline">
+          <p class="eyebrow">Work Index</p>
+          <h2>优秀作品索引</h2>
+        </div>
+        <p class="section-text">本站只整理来源、基础信息和学习分析入口，不提供高清下载或二次分发。</p>
+      </div>
+      <div id="home-works" class="work-list"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Case Archive</p>
+        <h2>往年优秀案例</h2>
+        <a href="cases.html">查看案例档案 <span>→</span></a>
+      </div>
+      <div id="home-cases" class="work-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Reading Notes</p>
+        <h2>参赛解析文章</h2>
+        <a href="analysis.html">阅读全部文章 <span>→</span></a>
+      </div>
+      <div id="home-articles" class="article-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>本站为非商业学习研究与信息索引项目。比赛信息、主题与作品资料请以官方来源和原始发布平台为准。</p>
+  </footer>
+  <button class="back-top" type="button" aria-label="返回顶部">↑</button>
+  <script src="data/archive-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
