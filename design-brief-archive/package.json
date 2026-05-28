@@ -1,0 +1,13 @@
+{
+  "name": "design-brief-archive",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A static design competition archive for learning, research, and submission planning.",
+  "scripts": {
+    "sync:data": "node scripts/sync-archive-data.js",
+    "validate:data": "node scripts/validate-data.js",
+    "check:site": "node scripts/check-site.js",
+    "check": "npm run sync:data && npm run validate:data && npm run check:site",
+    "serve": "python -m http.server 4173 --bind 127.0.0.1"
+  }
+}

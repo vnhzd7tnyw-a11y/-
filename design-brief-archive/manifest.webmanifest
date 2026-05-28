@@ -1,0 +1,16 @@
+{
+  "name": "赛题档案馆",
+  "short_name": "DBA",
+  "description": "面向设计专业大学生的竞赛资料、赛题解析与参赛规划网站。",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#5b6f75",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

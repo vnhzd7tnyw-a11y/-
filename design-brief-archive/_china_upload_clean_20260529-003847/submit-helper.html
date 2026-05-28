@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参赛助手 | 赛题档案馆</title>
+  <meta name="description" content="赛题档案馆是面向设计专业大学生的竞赛资料、赛题解析、优秀案例和参赛规划网站。">
+  <meta name="theme-color" content="#5b6f75">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="submit-helper">
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main-content">跳到主内容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">DBA</span><span>赛题档案馆</span></a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="search.html">全站搜索</a>
+      <a href="competitions.html">比赛库</a>
+      <a href="similar.html">相似赛题</a>
+      <a href="themes.html">历年主题</a>
+      <a href="works.html">优秀作品索引</a>
+      <a href="cases.html">往年优秀案例</a>
+      <a href="analysis.html">赛题解析</a>
+      <a href="planner.html">路径规划</a>
+      <a href="dashboard.html">我的看板</a>
+      <a href="submit-helper.html">参赛助手</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+  </header>
+  <noscript><div class="noscript-warning">本站需要启用 JavaScript 才能读取本地资料库、筛选比赛和使用参赛助手。</div></noscript>
+
+  <main id="main-content">
+    <section class="page-hero section reveal">
+      <p class="eyebrow">Submission Helper</p>
+      <h1>参赛助手</h1>
+      <p>帮助学生整理报名信息、作品材料、提交清单与官方入口。本站不代替官网提交，不保存或上传个人信息。</p>
+    </section>
+
+    <section class="section helper-layout">
+      <form id="submit-helper-form" class="helper-form reveal">
+        <article class="info-card">
+          <h2>学生信息</h2>
+          <div class="form-grid">
+            <label>学校<input name="school" type="text" autocomplete="organization" placeholder="例如：某某大学"></label>
+            <label>专业<input name="major" type="text" placeholder="例如：视觉传达设计"></label>
+            <label>年级<input name="grade" type="text" placeholder="例如：大三"></label>
+            <label>姓名<input name="studentName" type="text" autocomplete="name" placeholder="填写真实姓名"></label>
+            <label>学号<input name="studentId" type="text" placeholder="仅用于生成报名信息"></label>
+            <label>联系方式<input name="contact" type="text" autocomplete="email" placeholder="邮箱或手机号"></label>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <h2>作品信息</h2>
+          <div class="form-grid">
+            <label>作品名称<input name="workTitle" type="text" placeholder="作品标题"></label>
+            <label>作品类型<input name="workType" type="text" placeholder="海报 / 品牌 / 包装 / 插画等"></label>
+            <label>作者/团队<input name="team" type="text" placeholder="个人或团队成员"></label>
+            <label>作品文件说明<input name="fileNote" type="text" placeholder="文件名、格式、尺寸等"></label>
+          </div>
+          <label class="full-field">作品说明<textarea name="workDescription" rows="5" placeholder="简要说明主题理解、创意方向、视觉策略与最终表达。"></textarea></label>
+        </article>
+
+        <article class="info-card">
+          <h2>选择比赛</h2>
+          <label>目标比赛<select id="helper-competition" name="competitionId"></select></label>
+          <div id="helper-similar" class="similar-box"></div>
+        </article>
+      </form>
+
+      <aside class="helper-result reveal" aria-live="polite">
+        <article class="notice-card">
+          <h2>合规说明</h2>
+          <p>参赛助手只用于本地整理材料和生成提交前检查清单。报名、上传作品、确认协议和提交成功记录，必须由学生本人在比赛官方页面完成。</p>
+        </article>
+        <article id="helper-output" class="info-card"></article>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>涉及姓名、学号、联系方式等个人信息时，请只在可信设备上填写。本站第一版不上传、不保存到服务器。</p>
+  </footer>
+  <button class="back-top" type="button" aria-label="返回顶部">↑</button>
+  <script src="data/archive-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
